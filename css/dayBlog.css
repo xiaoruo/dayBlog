@@ -1,0 +1,45 @@
+.calendar {
+    width: 50%;
+    margin: 150px auto;
+}
+.title-time {
+    position: relative;
+    padding: 10px 0;
+    margin: 50px 30px;
+    border-radius: 5px;
+    background-color: #888;
+    text-align: center;
+    color: #fff;
+}
+.pre_d, .next_d {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+}
+.pre_d {
+    left: 20px;
+}
+.next_d {
+    right: 20px;
+}
+th span{
+    padding: 10px;
+    border-radius: 25%;
+    background-color: #bbb;
+}
+tr {
+    height: 60px;
+}
+td a {
+    color: #3c3c3c;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+}
+
+.down {
+    color: #fff;
+    box-shadow: 0px 0px 10px #000;
+    background-color: #bbb;
+}
