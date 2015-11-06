@@ -134,4 +134,3 @@ jQuery(document).ready(function($) {
     });
     var loadHtml = new LoadHtml();
 });
-}
