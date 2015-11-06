@@ -93,15 +93,15 @@ jQuery(document).ready(function($) {
                 end = 31;
                 break;
         }
-        $("tr").eq(i).find("td").eq(num).html('<a>' + (i < 10 ? '0' + i : i) + '</a>');
+        $("tr").eq(i).find("td").eq(num).html('<a target="_blank">' + (i < 10 ? '0' + i : i) + '</a>');
         var riqi = null;
         $("td").each(function() {
             if ($(this).parent().index() == 1) {
                 if ($(this).prev("td").html())
-                    $(this).html('<a>' + (++i < 10 ? '0' + i : i) + '</a>');
+                    $(this).html('<a target="_blank">' + (++i < 10 ? '0' + i : i) + '</a>');
             }
             if ($(this).parent().index() > 1 && i < end) {
-                $(this).html('<a>' + (++i < 10 ? '0' + i : i) + '</a>');
+                $(this).html('<a target="_blank">' + (++i < 10 ? '0' + i : i) + '</a>');
             }
         });
 
@@ -115,7 +115,7 @@ jQuery(document).ready(function($) {
             yue = 12;
         }
         var ri = "01";
-        var str = nian + " " + yue + " " + ri;
+        var str = nian + "/" + yue + "/" + ri;
         myDate = new Date(str);
         timer();
     });
@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
             yue = 1;
         }
         var ri = "01";
-        var str = nian + " " + yue + " " + ri;
+        var str = nian + "/" + yue + "/" + ri;
         myDate = new Date(str);
         timer();
     });
