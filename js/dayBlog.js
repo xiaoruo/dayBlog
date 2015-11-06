@@ -24,7 +24,6 @@ LoadHtml.prototype.insert = function() {
     var yearMonth = document.getElementById('title_time').innerHTML; //2015 年 11 月
     var theTable = document.getElementsByTagName('table')[0];
     var theDay = theTable.getElementsByTagName('a');
-    console.log(theDay);
     var theYear = yearMonth.slice(0, 4);
     var theMonth = yearMonth.slice(7, 9);
     for (var j in this.date) {
@@ -107,6 +106,7 @@ jQuery(document).ready(function($) {
 
     }
     timer();
+    var loadHtml = new LoadHtml();
     $(".pre_d").click(function() {
         var nian = myDate.getFullYear();
         var yue = myDate.getMonth();
@@ -118,6 +118,7 @@ jQuery(document).ready(function($) {
         var str = nian + "/" + yue + "/" + ri;
         myDate = new Date(str);
         timer();
+        loadHtml.insert();
     });
     $(".next_d").click(function() {
         var nian = myDate.getFullYear();
@@ -131,6 +132,6 @@ jQuery(document).ready(function($) {
         var str = nian + "/" + yue + "/" + ri;
         myDate = new Date(str);
         timer();
+        loadHtml.insert();
     });
-    var loadHtml = new LoadHtml();
 });
