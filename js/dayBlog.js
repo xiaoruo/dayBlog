@@ -30,7 +30,7 @@ LoadHtml.prototype.insert = function() {
         if (theYear === this.date[j].year && theMonth === this.date[j].month) {
             for (var i = 0, len = theDay.length; i < len; i++) {
                 if (theDay[i].innerHTML === this.date[j].day) {
-                    theDay[i].href = './diary/' + diary[0] + '.html';
+                    theDay[i].href = './diary/' + diary[j] + '.html';
                     theDay[i].className = 'down';
                 }
             }
