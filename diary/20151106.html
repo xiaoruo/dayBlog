@@ -26,6 +26,12 @@ a:hover {
 	color:	#005580 !important;
 	text-decoration:	underline !important;
 }
+code {
+	margin: 0 5px;
+	padding: 2px 5px;
+	background-color: #ddd;
+	border:1px solid #aaa;
+}
 blockquote   small:before {
 	content:	'\2014 \00A0';
 }
@@ -167,7 +173,7 @@ blockquote:after {
 <h3 id="e5b08fe79fa5e8af86" style="margin-top: 0.5em; margin-top: 1.0em; margin-right: 0; margin-right: 0; margin-bottom: 0.5em; margin-bottom: .6em; margin-left: 0; margin-left: 0; font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; text-rendering: optimizelegibility; font-size: 24.5px;">小知识</h3>
 <ul style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 25px;">
 <li><p style="margin-top: 0; margin-right: 0; margin-bottom: 1.1em; margin-left: 0; line-height: 1.6;"><strong style="font-weight: bold;">rem</strong> rem这个单位之前在翻译译文的时候就有遇到过，但是当时的译文重点不在这上面所以也没有去深入了解这个移动端单位的使用方法，在这次移动端界面的开发过程中因为使用到了rem所以对它有了一个全面的理解，那天写一篇关于rem的博客吧～</p></li>
-<li><p style="margin-top: 0; margin-right: 0; margin-bottom: 1.1em; margin-left: 0; line-height: 1.6;"><strong style="font-weight: bold;"><code style="border: 0; border-radius: 4px; font-size: 90%;">new Date()</code></strong> 在建立这个日记站点的过程中发现一个问题就是在其他浏览器都会正常显示，但是在Safari上面切换月份就回出现年份月份日期都不显示的bug，搜索发现原来Safari对<code style="border: 0; border-radius: 4px; font-size: 90%;">Date()</code>传入的参数有要求。之前我传入的日期是类似于<code style="border: 0; border-radius: 4px; font-size: 90%;">2016 11 06</code> 这个写法Chrome可以识别但Safari不可以，所以改成<code style="border: 0; border-radius: 4px; font-size: 90%;">2016/11/06</code>就可以啦～</p></li>
+<li><p style="margin-top: 0; margin-right: 0; margin-bottom: 1.1em; margin-left: 0; line-height: 1.6;"><strong style="font-weight: bold;"><code style="border: 0; border-radius: 4px; font-size: 90%;">new Date()</code></strong> 在建立这个日记站点的过程中发现一个问题就是在其他浏览器都会正常显示，但是在Safari上面切换月份就回出现年份月份日期都不显示的bug，搜索发现原来Safari对<code style="border: 0; border-radius: 4px; font-size: 90%;">Date()</code>传入的参数有要求。之前我传入的日期是类似于<code style="border: 0; border-radius: 4px; font-size: 90%;">2016 11 06</code> 这个写法Chrome可以识别但Safari不可以，所以改成<code style="border-radius: 4px; font-size: 90%;">2016/11/06</code>就可以啦～</p></li>
 </ul>
 </li>
 <li>
