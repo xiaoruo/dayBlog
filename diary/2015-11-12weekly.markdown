@@ -1,0 +1,38 @@
+## `<picture>`
+* 传统的`<img>`用一张图片做不同屏幕的响应式效果，大小横竖的变化让图片好难搞。
+
+
+```
+<picture>
+  <source srcset="http://www.gbtags.com/gb/laitu/800x400" media="(max-width: 800px)" />
+  <source srcset="http://www.gbtags.com/gb/laitu/1600x800" />
+  <img src="http://www.gbtags.com/gb/laitu/1600x800" alt="">
+</picture>
+```
+
+
+* http://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015
+
+## canvas 制作列表
+
+* 用一个DOM节点来替换好多个DOM节点，就可以节省页面内存了呢～
+* http://www.alloyteam.com/2015/10/canvas-attempts-to-draw-list/
+
+
+## `background-size`中的数学公式
+* http://www.w3cplus.com/css3/background-size-for-contain-and-cover.html
+
+## clip-path
+
+```
+img {
+    clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
+}
+```
+* demo1: http://codepen.io/airen/pen/wglAe
+* demo2: http://codepen.io/airen/pen/vyEzH
+* http://www.w3cplus.com/css3/creating-responsive-shapes-with-clip-path.html
+
+## 《给 JavaScript 初心者的 ES2015 实战》
+* http://gank.io/post/564151c1f1df1210001c9161
+
